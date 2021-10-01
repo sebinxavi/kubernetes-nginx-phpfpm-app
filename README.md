@@ -189,6 +189,8 @@ spec:
 
 ## Results: 
 
+We will get below results once we run the above deployments.
+
 ![Alt Text](https://i.ibb.co/ncCK0SK/pic1.png)
 
 ![Alt Text](https://i.ibb.co/54CyQ13/pic2.png)
