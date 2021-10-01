@@ -1,6 +1,6 @@
 # Kubernetes Nginx PHP-FPM App
 
-To run a PHP application, Nginx acts as a proxy to PHP-FPM. Containerizing this setup in a single container can be a difficult process, but Kubernetes will help manage both services in separate containers.
+In this tutorial, we will deploy a PHP application on a Kubernetes cluster with Nginx and PHP-FPM running in separate containers.
 
 We want the web-server nginx and phpfpm to be co-located in separate pods.
 ![alt text](https://i.ibb.co/R4P9YB0/kubernetes-nginx-phpfpm1-drawio.png)
