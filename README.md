@@ -11,6 +11,8 @@ PHP-FPM is an implementation of Fast-CGI for PHP with improved capabilities arou
 ### Nginx
 Nginx is a web server and reverse proxy that’s widely used for high traffic applications. When run in combination with PHP-FPM, Nginx is configured to send requests for .php routes to PHP-FPM to serve the page.
 
+We should upload the application files first, to all worker nodes to the directory /var/website as /var/website is volume path to containers.
+
 #### nginx-deployment.yml
 
 ~~~
