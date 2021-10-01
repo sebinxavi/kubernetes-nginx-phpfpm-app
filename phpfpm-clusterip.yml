@@ -1,0 +1,20 @@
+---
+kind: Service 
+apiVersion: v1 
+metadata:
+  name: phpfpm
+  labels:
+    app: phpfpm
+    layer: backend
+        
+spec:
+
+  type: ClusterIP
+  selector:
+    
+    app: phpfpm
+
+  ports:
+    
+    - port: 9000
+      targetPort: 9000

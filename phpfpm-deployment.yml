@@ -1,0 +1,38 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phpfpm
+  labels:
+    app: phpfpm
+    layer: backend
+spec:
+    
+  replicas: 6
+  selector:
+    matchLabels:
+      app: phpfpm
+  template:
+    
+    
+    metadata:
+      labels:
+        app: phpfpm
+            
+    spec:
+    
+      containers:
+      
+        - name: phpfpm
+          image: php:fpm-alpine
+          ports:
+            - containerPort: 9000
+          volumeMounts:
+            - mountPath: /var/www/html/
+              name: contents
+        
+      volumes:
+        - name: contents
+          hostPath:
+            path: /var/website
+            type: Directory
